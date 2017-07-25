@@ -85,8 +85,6 @@
     console.log(b); // ReferenceError
     ```
 
-**[⬆ back to top](#table-of-contents)**
-
 ## Objects
 
   <a name="objects--no-new"></a><a name="3.1"></a>

@@ -59,6 +59,10 @@
   - **Extensions**: Use `.js` extension.
   - **Filename**: Use PascalCase for React component and camelCase for other js file.
   - **Reference Naming**: Use PascalCase for React components and camelCase for their instances.
+  - **Scene Naming** Add ```Scene``` text to last of file name.
+  - **Container Naming** Add ```Container``` text to last of file name.
+  - **Action naming** Add ```Action``` text to last of file name.
+  - **Reducer naming** Add ```Reducer``` text to last of file name.
 
     ```jsx
     // bad
@@ -113,14 +117,12 @@
 
 ## Alignment
 
-  - Follow these alignment styles for JSX syntax.
+  - Follow these alignment styles for JSX syntax. ```freestyle```
 
     ```jsx
-    // bad
     <Foo superLongParam="bar"
          anotherSuperLongParam="baz" />
 
-    // good
     <Foo
       superLongParam="bar"
       anotherSuperLongParam="baz" />
@@ -143,11 +145,7 @@
     > Why? Regular HTML attributes also typically use double quotes instead of single, so JSX attributes mirror this convention.
 
     ```jsx
-    // bad
     <Foo bar='bar' />
-
-    // good
-    <Foo bar="bar" />
 
     // bad
     <Foo style={{ left: "20px" }} />
@@ -206,9 +204,6 @@
     ```jsx
     // bad
     <Foo hidden={true} />
-
-    // good
-    <Foo hidden />
     ```
 
   - Always include an `alt` prop on `<img>` tags. If the image is presentational, `alt` can be an empty string or the `<img>` must have `role="presentation"`.

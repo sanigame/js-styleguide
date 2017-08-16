@@ -102,6 +102,8 @@
   - [3.2](#es6-computed-properties) Use computed property names when creating objects with dynamic property names.
 
     > Why? They allow you to define all the properties of an object in one place.
+    
+    ```freestyle```
 
     ```javascript
 
@@ -109,14 +111,12 @@
       return `a key named ${k}`;
     }
 
-    // bad
     const obj = {
       id: 5,
       name: 'San Francisco',
     };
     obj[getKey('enabled')] = true;
 
-    // good
     const obj = {
       id: 5,
       name: 'San Francisco',
@@ -170,6 +170,8 @@
   - [3.5](#objects--grouped-shorthand) Group your shorthand properties at the beginning of your object declaration.
 
     > Why? It’s easier to tell which properties are using the shorthand.
+    
+    ```freestyle```
 
     ```javascript
     const anakinSkywalker = 'Anakin Skywalker';
@@ -1130,7 +1132,7 @@
     ```javascript
     // bad
     const Scale360StyleGuide = require('./Scale360StyleGuide');
-    module.exports = AirbnbStyleGuide.es6;
+    module.exports = Scale360StyleGuide.es6;
 
     // ok
     import Scale360StyleGuide from './Scale360StyleGuide';

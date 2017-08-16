@@ -140,9 +140,7 @@
 
 ## Quotes
 
-  - Always use double quotes (`"`) for JSX attributes, but single quotes (`'`) for all other JS.
-
-    > Why? Regular HTML attributes also typically use double quotes instead of single, so JSX attributes mirror this convention.
+  - Always use single quotes (`'`) for all other JS.
 
     ```jsx
     <Foo bar='bar' />

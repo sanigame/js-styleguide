@@ -171,7 +171,7 @@
 
     > Why? It’s easier to tell which properties are using the shorthand.
     
-    ```freestyle```
+    `freestyle`
 
     ```javascript
     const anakinSkywalker = 'Anakin Skywalker';
@@ -287,6 +287,8 @@
 
   <a name="es6-array-spreads"></a><a name="4.3"></a>
   - [4.3](#es6-array-spreads) Use array spreads `...` to copy arrays.
+    
+    `freestyle`
 
     ```javascript
     // bad
@@ -362,6 +364,8 @@
   <a name="arrays--bracket-newline"></a>
   - [4.6](#arrays--bracket-newline) Use line breaks after open and before close array brackets if an array has multiple lines
 
+    `freestyle`
+
     ```javascript
     // bad
     const arr = [
@@ -426,6 +430,8 @@
   <a name="destructuring--array"></a><a name="5.2"></a>
   - [5.2](#destructuring--array) Use array destructuring. jscs: [`requireArrayDestructuring`](http://jscs.info/rule/requireArrayDestructuring)
 
+    `freestyle`
+
     ```javascript
     const arr = [1, 2, 3, 4];
 
@@ -483,6 +489,8 @@
   - [6.2](#strings--line-length) Strings that cause the line to go over 100 characters should not be written across multiple lines using string concatenation.
 
     > Why? Broken strings are painful to work with and make code less searchable.
+
+    `freestyle`
 
     ```javascript
     // bad
@@ -549,6 +557,8 @@
   - [7.1](#functions--declarations) Use named function expressions instead of function declarations. eslint: [`func-style`](http://eslint.org/docs/rules/func-style) jscs: [`disallowFunctionDeclarations`](http://jscs.info/rule/disallowFunctionDeclarations)
 
     > Why? Function declarations are hoisted, which means that it’s easy - too easy - to reference the function before it is defined in the file. This harms readability and maintainability. If you find that a function’s definition is large or complex enough that it is interfering with understanding the rest of the file, then perhaps it’s time to extract it to its own module! Don’t forget to name the expression - anonymous functions can make it harder to locate the problem in an Error’s call stack. ([Discussion](https://github.com/airbnb/javascript/issues/794))
+
+    `freestyle`
 
     ```javascript
     // bad
@@ -792,6 +802,11 @@
   <a name="functions--signature-invocation-indentation"></a>
   - [7.15](#functions--signature-invocation-indentation) Functions with multiline signatures, or invocations, should be indented just like every other multiline list in this guide: with each item on a line by itself, with a trailing comma on the last item.
 
+    ```
+    freestyle
+    if more then 3 items. use new line.
+    ```
+
     ```javascript
     // bad
     function foo(bar,
@@ -915,6 +930,8 @@
   - [8.4](#arrows--one-arg-parens) If your function takes a single argument and doesn’t use braces, omit the parentheses. Otherwise, always include parentheses around arguments for clarity and consistency. Note: it is also acceptable to always use parentheses, in which case use the [“always” option](http://eslint.org/docs/rules/arrow-parens#always) for eslint or do not include [`disallowParenthesesAroundArrowParam`](http://jscs.info/rule/disallowParenthesesAroundArrowParam) for jscs. eslint: [`arrow-parens`](http://eslint.org/docs/rules/arrow-parens.html) jscs:  [`disallowParenthesesAroundArrowParam`](http://jscs.info/rule/disallowParenthesesAroundArrowParam)
 
     > Why? Less visual clutter.
+
+    `freestyle`
 
     ```javascript
     // bad
